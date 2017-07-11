@@ -1,20 +1,15 @@
-function recursiveBubbleSort(array,index) {
-    if((array[index] > array[index+1])) {
-        [array[index],array[index+1]] = [array[index+1],array[index]];
-    }
+exports.rBubbleSort = function rBubbleSort(array,index=0) {
     if (index == array.length-1) {
         return array;
     }
-    else {
-        recursiveBubbleSort(array,index+1)
-    }
-    for (var i=0; i< array.length; i++){        
-        for (var j=0; j<array.length-1; j++) {            
-            if(array[j] > array[j+1]){                
-              [array[j],array[j+1]] = [array[j+1],array[j]];
-            }
+    
+    for (var i=index; i<array.length; i++) {
+        if(array[index] > array[index+1]) {
+            [array[index],array[index+1]] = [array[index+1],array[index]];        
         }
+        array = rBubbleSort(array,index+1);
     }
+    
     return array;
 }
-module.export = recursiveBubbleSort;
+
