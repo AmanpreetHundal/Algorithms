@@ -1,4 +1,4 @@
-var expect    = require("chai").expect;
+var expect = require("chai").expect;
 var sorter = require("../src/index");
 
 describe("Sorting Algorithms", function() {
@@ -31,7 +31,7 @@ describe("Sorting Algorithms", function() {
             var array = [64 ,25, 12, 22, 11, 22];            
             var sortedArray = [11, 12, 22, 22, 25, 64];
 
-            expect(sorter.recursiveBubbleSort(array)).to.deep.equal(sortedArray);
+            expect(sorter.recursiveBubbleSort.rBubbleSort(array)).to.deep.equal(sortedArray);
         });
     });
 });

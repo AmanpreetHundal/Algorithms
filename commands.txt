@@ -1,0 +1,30 @@
+Firt Time
+
+1.Initialize the local directory as a Git repository.
+git init
+
+2. Add the files in your new local repository. This stages them for the first commit.
+git add .
+
+3.Commit the files that you've staged in your local repository.
+git commit -m "First commit"
+
+4.In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+git remote add origin remote repository URL
+
+5.Push the changes in your local repository to GitHub.
+git push origin master
+
+Branch creation
+
+1.Create the branch on your local machine and switch in this branch :
+$ git checkout -b [name_of_your_new_branch]
+
+2.Change working branch :
+$ git checkout [name_of_your_new_branch]
+
+3.Push the branch on github :
+$ git push origin [name_of_your_new_branch]
+
+4.Update your branch from the original branch from official repository has been updated :
+ $ git fetch [name_of_your_remote]
